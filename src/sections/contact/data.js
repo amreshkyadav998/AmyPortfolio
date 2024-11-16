@@ -11,7 +11,7 @@ const data = [
     {id: 4, link: 'https://x.com/amreshky997?s=08', icon: <AiOutlineTwitter/>},
     {id: 5, link: 'https://www.linkedin.com/in/amresh-yadav-223656257 ', icon: <AiOutlineLinkedin/>},
     {id: 6, link: 'https://github.com/amreshkyadav998', icon: <AiFillGithub/>},
-    {id:7, link: 'http://leetcode.com/amreshky_lm998/', icon: <SiLeetcode/> },
+    {id:7, link: 'http://leetcode.com/amreshky/', icon: <SiLeetcode/> },
     {id:8, link: 'https://codeforces.com/profile/amy999', icon: <SiCodeforces/> }
 ]
 

@@ -19,7 +19,7 @@ export const socials = [
     {id: 2, link: 'https://x.com/amreshky997?s=08', icon: <AiOutlineTwitter/>},
     {id: 3, link: 'https://www.linkedin.com/in/amresh-yadav-223656257', icon: <AiOutlineLinkedin/>},
     {id: 4, link: 'https://github.com/amreshkyadav998', icon: <AiFillGithub/>},
-    {id:5, link: 'http://leetcode.com/amreshky_lm998/', icon: <SiLeetcode/> },
+    {id:5, link: 'http://leetcode.com/amreshky/', icon: <SiLeetcode/> },
     {id:5, link: 'https://codeforces.com/profile/amy999', icon: <SiCodeforces/> }
 ]
 
