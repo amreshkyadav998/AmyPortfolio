@@ -4,7 +4,7 @@ import {FaWhatsapp} from 'react-icons/fa'
 import {AiOutlineTwitter} from 'react-icons/ai'
 import {AiOutlineLinkedin} from "react-icons/ai";
 import {AiFillGithub} from 'react-icons/ai'
-import {SiLeetcode,SiCodeforces} from 'react-icons/si';
+import {SiLeetcode,SiCodeforces,SiCodechef} from 'react-icons/si';
 
 const data = [
     {id: 1, icon: <HiOutlineMail/>, link: 'mailto:amresh.2022ug2028@iiitranchi.ac.in'},
@@ -12,7 +12,8 @@ const data = [
     {id: 5, link: 'https://www.linkedin.com/in/amresh-yadav-223656257 ', icon: <AiOutlineLinkedin/>},
     {id: 6, link: 'https://github.com/amreshkyadav998', icon: <AiFillGithub/>},
     {id:7, link: 'http://leetcode.com/amreshky/', icon: <SiLeetcode/> },
-    {id:8, link: 'https://codeforces.com/profile/amy999', icon: <SiCodeforces/> }
+    {id:8, link: 'https://codeforces.com/profile/amy999', icon: <SiCodeforces/> },
+    {id:6,link:'https://www.codechef.com/users/amreshky997',icon:<SiCodechef/>}
 ]
 
 
