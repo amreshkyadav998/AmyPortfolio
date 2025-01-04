@@ -1,6 +1,15 @@
 const data = [
 
     {
+        id : 12,
+        category : 'FullStack',
+        image:"/assets/AmiChat.png",
+        title:"AmiChat",
+        desc : "Amichat is a user-friendly chat application designed for seamless real-time communication, offering intuitive features and a responsive interface. It supports individual and group chats, ensuring efficient and enjoyable interactions.",
+        demo:"https://amichat.onrender.com/login",
+        github:"https://github.com/amreshkyadav998/AmiChat"
+    },
+    {
         id : 11,
         category : 'FullStack',
         image:"/assets/Shopify.png",
@@ -9,6 +18,7 @@ const data = [
         demo:"https:///",
         github:"https://github.com/amreshkyadav998/ShopifyLast"
     },
+   
 
     {
         id: 2,
