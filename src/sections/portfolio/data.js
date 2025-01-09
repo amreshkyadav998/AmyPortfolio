@@ -15,7 +15,16 @@ const data = [
         image:"/assets/Shopify.png",
         title:"SHOPIFY",
         desc : "Shopify is a versatile e-commerce platform that empowers businesses to create and manage online stores effortlessly. With a wide range of features, it ensures seamless shopping experiences and supports growth for businesses.",
-        demo:"https:///",
+        demo:"https://shopify-jet-five.vercel.app/",
+        github:"https://github.com/amreshkyadav998/ShopifyLast"
+    },
+    {
+        id : 42,
+        category : 'Frontend',
+        image:"/assets/Shopify.png",
+        title:"SHOPIFY ADMIN PANEL",
+        desc : "Shopify is a versatile e-commerce platform that empowers businesses to create and manage online stores effortlessly. With a wide range of features, it ensures seamless shopping experiences and supports growth for businesses.",
+        demo:"https://shopify-last-admin.vercel.app/",
         github:"https://github.com/amreshkyadav998/ShopifyLast"
     },
    
@@ -26,7 +35,7 @@ const data = [
         image: "/assets/staybnb.png",
         title: "StayBnB",
         desc: "StayBNB is your go-to platform for booking cozy flats and unique stays near breathtaking beaches. Whether you're planning a relaxing getaway or an adventure-filled vacation, StayBNB offers the perfect accommodations to make your trip unforgettable.",
-        demo: 'https://',
+        demo: 'https://staybnb-hsu1.onrender.com/listings',
         github: 'https://github.com/amreshkyadav998/stayBnB'
     },
  
