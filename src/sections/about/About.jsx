@@ -32,7 +32,8 @@ const About = () => {
                     </p>
                     <p>
                         Hi, I'm Amresh Yadav, a dedicated MERN Stack web developer currently pursuing a B.Tech in Electronics and Communication Engineering. With a commitment to excellence and a patient approach, I've successfully completed a range of projects and gained valuable industry insights. I am eager to apply my skills and contribute to innovative projects. Feel free to review my resume and let's discuss how I can be an asset to your team!</p>
-                    <a href={resume} download className='btn primary'>Download Resume <HiDownload /></a>
+                    {/* <a href={resume} download className='btn primary'>Download Resume <HiDownload /></a> */}
+                    <a  className='btn primary'>Download Resume <HiDownload /></a>
                 </div>
             </div>
         </section>
@@ -40,4 +41,6 @@ const About = () => {
 }
 
 export default About;
+
+//add 35 line for resume instead of 36
 
