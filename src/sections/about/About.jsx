@@ -1,5 +1,5 @@
 import AboutImage from '../../assets/a1.png'
-import resume from '../../assets/resume1.pdf'  
+// import resume from '../../assets/resume1.pdf'   uncomment it
 import { HiDownload } from 'react-icons/hi'
 import data from './data'
 import Card from '../../components/Card'
@@ -32,7 +32,7 @@ const About = () => {
                     </p>
                     <p>
                         Hi, I'm Amresh Yadav, a dedicated MERN Stack web developer currently pursuing a B.Tech in Electronics and Communication Engineering. With a commitment to excellence and a patient approach, I've successfully completed a range of projects and gained valuable industry insights. I am eager to apply my skills and contribute to innovative projects. Feel free to review my resume and let's discuss how I can be an asset to your team!</p>
-                    <a href={res} download className='btn primary'>Download Resume <HiDownload /></a>
+                    <a href={resume} download className='btn primary'>Download Resume <HiDownload /></a>
                 </div>
             </div>
         </section>
@@ -41,4 +41,3 @@ const About = () => {
 
 export default About;
 
-// write resume in href section
