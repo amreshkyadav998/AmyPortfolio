@@ -35,7 +35,7 @@ const data = [
         image: "/assets/staybnb.png",
         title: "StayBnB",
         desc: "StayBNB is your go-to platform for booking cozy flats and unique stays near breathtaking beaches. Whether you're planning a relaxing getaway or an adventure-filled vacation, StayBNB offers the perfect accommodations to make your trip unforgettable.",
-        demo: 'https://staybnb-hsu1.onrender.com/listings',
+        demo: 'https://stay-bn-b-yeg4.vercel.app/listings',
         github: 'https://github.com/amreshkyadav998/stayBnB'
     },
  
@@ -75,8 +75,18 @@ const data = [
         image: "/assets/chatgemini.png",
         title: "ChatGemini",
         desc: "ChatGemini is an innovative chatbot powered by the Gemini API, offering intelligent conversations and seamless interactions. It leverages Gemini's advanced AI capabilities to deliver personalized, responsive, and engaging user experiences in various applications. ",
-        demo: 'https://',
+        demo: 'https://chat-gemini-eight-zeta.vercel.app/',
         github: "https://github.com/amreshkyadav998/ChatGemini"
+    },
+    
+    {
+        id: 30,
+        category: 'FullStack',
+        image: "/assets/invoice.png",
+        title: "Invoice Generator",
+        desc: "website allows users to add products, preview invoices, and generate PDF documents seamlessly for a professional experience. ",
+        demo: 'https://invoice-generator-beta-lac.vercel.app/',
+        github: "https://github.com/amreshkyadav998/Invoice_Generator"
     },
     {
         id: 1,
