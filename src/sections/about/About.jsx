@@ -1,5 +1,5 @@
 import AboutImage from '../../assets/a1.png'
-import resume from '../../assets/resume.pdf'
+import resume from '../../assets/resume.pdf'  //change resume -> resume1 in .pdf one
 import { HiDownload } from 'react-icons/hi'
 import data from './data'
 import Card from '../../components/Card'
