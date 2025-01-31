@@ -67,6 +67,7 @@ const data = [
         demo: 'https://www.airflash.co/',
         github: 'https://github.com/amreshkyadav998/FandomX'
     },
+
     
   
     {
@@ -77,6 +78,15 @@ const data = [
         desc: "ChatGemini is an innovative chatbot powered by the Gemini API, offering intelligent conversations and seamless interactions. It leverages Gemini's advanced AI capabilities to deliver personalized, responsive, and engaging user experiences in various applications. ",
         demo: 'https://chat-gemini-eight-zeta.vercel.app/',
         github: "https://github.com/amreshkyadav998/ChatGemini"
+    },
+     {
+        id: 15,
+        category: 'Frontend',
+        image: "/assets/PulsePost.png",
+        title: "PulsePost",
+        desc: "It is a blog application which is mostly focus on tech related blogs. ",
+        demo: 'https://pulse-post-coral.vercel.app/',
+        github: "https://github.com/amreshkyadav998/PulsePost"
     },
     
     {
