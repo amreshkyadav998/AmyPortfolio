@@ -20,7 +20,8 @@
     padding: 20px !important;
     opacity: 0.93 !important;
     color: var(--color-white);
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background-color: #008080;
     border: 1.7px solid var(--color-primary) !important;
     /* color: var(--color-white); */
     vertical-align: middle !important;

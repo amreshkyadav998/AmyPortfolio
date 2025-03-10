@@ -9,6 +9,7 @@ import Footer from './sections/footer/Footer';
 import Theme from './theme/Theme';
 import Testimonials from './sections/Skills/skills';
 import { useThemeContext } from './context/theme-context';
+// import ExperienceSection from './sections/portfolio/Experience';
 
 const App = () => {
   const {themeState} = useThemeContext();
@@ -18,6 +19,7 @@ const App = () => {
         <Navbar/>
         <Header/>
         <About/>
+        {/* <ExperienceSection/> */}
         <Portfolio/>
         {/* <Skills/> */}
         <Testimonials/>

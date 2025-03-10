@@ -5,6 +5,7 @@ nav {
     place-items: center;
     background: var(--color-primary);
     position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 9;

@@ -1,0 +1,145 @@
+.exp-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    position: relative;
+  }
+  
+  .exp-three-container {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .exp-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  
+  .exp-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 48px;
+    z-index: 1;
+  }
+  
+  .exp-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .exp-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .exp-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .exp-card-content {
+    padding: 32px;
+  }
+  
+  .exp-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+  }
+  
+  @media (max-width: 768px) {
+    .exp-card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .exp-company-info {
+    color: white;
+  }
+  
+  .exp-company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .exp-role {
+    color: #60a5fa;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .exp-duration,
+  .exp-location {
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  
+  .exp-description {
+    color: #e2e8f0;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  
+  .exp-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .exp-skill-tag {
+    background: rgba(96, 165, 250, 0.2);
+    color: #93c5fd;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 14px;
+  }
+  
+  .exp-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .exp-highlight-item {
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .exp-highlight-item::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #60a5fa;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  @keyframes exp-fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .exp-card {
+    animation: exp-fadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+  }
+  

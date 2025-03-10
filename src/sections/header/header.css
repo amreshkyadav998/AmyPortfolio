@@ -1,5 +1,5 @@
 header {
-    margin-top: 5rem;
+    margin-top:0.01rem;
     height: calc(100vh - 5rem);
     display: grid;
     place-items: center;
@@ -20,6 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    /* z-index: 1; */
     margin-right: 2rem;
   }
   
@@ -29,6 +30,7 @@ header {
     background: var(--color-light);
     color: var(--color-black);
     display: grid;
+    /* z-index: 1; */
     place-items: center;
     border-radius: var(--border-radius-3);
   }
@@ -106,7 +108,7 @@ header {
 /* MEDIA QUERIES (mobile) */
 @media screen and (max-width: 600px) {
   header {
-    margin-top: 4rem;
+    margin-top: 0.01rem;
     height: auto; /* Allow the header to adjust based on content height */
   }
 
@@ -137,7 +139,7 @@ header {
     justify-content: center;
     gap: 0.8rem; /* Adjust gap for smaller screens */
     margin-bottom: 2rem;
-    z-index: 10; /* Bring socials to the front */
+    z-index: 1; /* Bring socials to the front */
     position: sticky;
   }
 

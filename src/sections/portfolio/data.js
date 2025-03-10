@@ -9,6 +9,37 @@ const data = [
         demo:"https://amichat.onrender.com/login",
         github:"https://github.com/amreshkyadav998/AmiChat"
     },
+
+    {
+        id : 60,
+        category : 'FullStack',
+        image:"/assets/quickpick.png",
+        title:"QuickPick",
+        desc : "QuickPick is a fast and user-friendly e-commerce website offering a seamless shopping experience with a wide range of products. It features secure payments, quick delivery, and an intuitive interface for effortless browsing.",
+        demo:"https://quick-pick-c2ce.vercel.app/",
+        github:"https://github.com/amreshkyadav998/QuickPick"
+    },
+
+    {
+        id: 2,
+        category: 'FullStack',
+        image: "/assets/staybnb.png",
+        title: "StayBnB",
+        desc: "StayBNB is your go-to platform for booking cozy flats and unique stays near breathtaking beaches. Whether you're planning a relaxing getaway or an adventure-filled vacation, StayBNB offers the perfect accommodations to make your trip unforgettable.",
+        demo: 'https://stay-bn-b-yeg4.vercel.app/listings',
+        github: 'https://github.com/amreshkyadav998/stayBnB'
+    },
+
+    {
+        id: 15,
+        category: 'Frontend',
+        image: "/assets/PulsePost.png",
+        title: "PulsePost",
+        desc: "It is a blog application which is mostly focus on tech related blogs. ",
+        demo: 'https://pulse-post-coral.vercel.app/',
+        github: "https://github.com/amreshkyadav998/PulsePost"
+    },
+
     {
         id : 11,
         category : 'FullStack',
@@ -28,16 +59,6 @@ const data = [
         github:"https://github.com/amreshkyadav998/ShopifyLast"
     },
    
-
-    {
-        id: 2,
-        category: 'FullStack',
-        image: "/assets/staybnb.png",
-        title: "StayBnB",
-        desc: "StayBNB is your go-to platform for booking cozy flats and unique stays near breathtaking beaches. Whether you're planning a relaxing getaway or an adventure-filled vacation, StayBNB offers the perfect accommodations to make your trip unforgettable.",
-        demo: 'https://stay-bn-b-yeg4.vercel.app/listings',
-        github: 'https://github.com/amreshkyadav998/stayBnB'
-    },
  
     {
         id: 8,
@@ -79,15 +100,6 @@ const data = [
         demo: 'https://chat-gemini-eight-zeta.vercel.app/',
         github: "https://github.com/amreshkyadav998/ChatGemini"
     },
-     {
-        id: 15,
-        category: 'Frontend',
-        image: "/assets/PulsePost.png",
-        title: "PulsePost",
-        desc: "It is a blog application which is mostly focus on tech related blogs. ",
-        demo: 'https://pulse-post-coral.vercel.app/',
-        github: "https://github.com/amreshkyadav998/PulsePost"
-    },
     
     {
         id: 30,
@@ -97,6 +109,15 @@ const data = [
         desc: "website allows users to add products, preview invoices, and generate PDF documents seamlessly for a professional experience. ",
         demo: 'https://invoice-generator-beta-lac.vercel.app/',
         github: "https://github.com/amreshkyadav998/Invoice_Generator"
+    },
+    {
+        id: 72,
+        category: 'FullStack',
+        image: "/assets/todo.png",
+        title: "Task Manager",
+        desc: "It is a todo application where we can add our daily task and mark it completed as well. ",
+        demo: 'https://task-management-assi-13z2-or0cinlsu.vercel.app/',
+        github: "https://github.com/amreshkyadav998/task_management-assi-"
     },
     {
         id: 1,
