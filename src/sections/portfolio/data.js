@@ -1,5 +1,15 @@
 const data = [
 
+     {
+        id : 39,
+        category : 'FullStack',
+        image:"/codecollab.png",
+        title:"CodeCollab",
+        desc :"CodeColab is a collaborative platform where users can post, edit, and share code snippets. Other users can like and comment on these snippets. The platform supports both light and dark themes and utilizes authentication for user management.",
+        demo:"https://code-colab-7pod.vercel.app/",
+        github:"https://github.com/amreshkyadav998/Code_Colab"
+    },
+
     {
         id : 12,
         category : 'FullStack',
@@ -57,6 +67,16 @@ const data = [
         desc : "Shopify is a versatile e-commerce platform that empowers businesses to create and manage online stores effortlessly. With a wide range of features, it ensures seamless shopping experiences and supports growth for businesses.",
         demo:"https://shopify-last-admin.vercel.app/",
         github:"https://github.com/amreshkyadav998/ShopifyLast"
+    },
+
+    {
+        id : 47,
+        category : 'Frontend',
+        image:"/JammiFy.png",
+        title:"JammiFy",
+        desc : "A modern music library application built with React.js and Micro Frontend Architecture demonstrating advanced concepts like Module Federation, role-based authentication, and responsive design.",
+        demo:"https://jammify1.vercel.app/",
+        github:"https://github.com/amreshkyadav998/Jammify"
     },
    
  

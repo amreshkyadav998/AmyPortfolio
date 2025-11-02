@@ -13,6 +13,7 @@
 .btn.cat__btn:hover {
     transform: translateY(0);
 }
+
 .para-project{
     color: rgb(108, 104, 104);
 }
@@ -22,11 +23,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    align-items: start;
+    align-items: stretch; /* Changed from start to stretch */
 }
 
 .card.portfolio__project {
     animation: animateProject 800ms ease-in forwards;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    height: 100%; /* Added */
 }
 
 @keyframes animateProject {
@@ -49,13 +53,19 @@
     overflow: hidden;
 }
 
+.portfolio__project h4 {
+    margin-bottom: 0.5rem; /* Added for consistency */
+}
+
 .portfolio__project p {
     margin: 0.5rem 0 2rem;
+    flex-grow: 1; /* Added - pushes buttons to bottom */
 }
 
 .portfolio__project-cta {
     display: flex;
     gap: 1rem;
+    margin-top: auto; /* Added - keeps buttons at bottom */
 }
 
 .portfolio__project:hover .btn.sm {
