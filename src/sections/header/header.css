@@ -1,5 +1,5 @@
 header {
-  margin-top: 0.01rem;
+  margin-top: 3rem;
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -216,6 +216,7 @@ header {
   width: fit-content;
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.8s ease-out;
+  margin-top: 6rem;
 }
 
 .badge-dot {
