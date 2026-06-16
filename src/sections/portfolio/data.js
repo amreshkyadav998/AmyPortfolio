@@ -1,5 +1,15 @@
 const data = [
 
+    {
+        id : 100,
+        category : 'FullStack',
+        image:"/assets/nomichi.png",
+        title:"Nomichi Trip Desk",
+        desc : "Nomichi Trip Desk is a full-stack trip planning and travel management application that helps users organize and manage their journeys with ease. It offers an intuitive interface for planning trips end to end.",
+        demo:"https://nomichi-trip-desk.vercel.app/",
+        github:"https://github.com/amreshkyadav998/Nomichi-trip-desk"
+    },
+
      {
         id : 39,
         category : 'FullStack',
@@ -88,6 +98,26 @@ const data = [
         desc: "LinkShrink is a URL shortener built with React.js and Supabase, offering fast and secure link management. Styled with ShadCN, it provides a sleek interface and advanced analytics for easy link tracking.",
         demo: 'https://linkshrink1.onrender.com/',
         github: 'https://github.com/amreshkyadav998/LinkShrink'
+    },
+
+    {
+        id : 101,
+        category : 'FullStack',
+        image:"/assets/taskflow.png",
+        title:"TaskFlow",
+        desc : "TaskFlow is a task management single-page application where users can register, create projects, add and assign tasks, and manage status via a Jira-style drag-and-drop Kanban board. Built with React 19, TypeScript, Vite, shadcn/ui, TanStack Query, and MSW.",
+        demo:"https://taskflow-amresh-yadav.vercel.app/login",
+        github:"https://github.com/amreshkyadav998/taskflow-amresh-yadav"
+    },
+
+    {
+        id : 102,
+        category : 'FullStack',
+        image:"/assets/intervue.png",
+        title:"Live Polling System",
+        desc : "A real-time interactive polling system for classrooms and events. Teachers create live polls with timers and monitor results instantly, while students join and respond in real time. Built with React, Node.js, Express, and Socket.io.",
+        demo:"https://intervue-polling-cd9h.vercel.app/",
+        github:"https://github.com/amreshkyadav998/IntervuePolling"
     },
     // {
     //     id: 800,

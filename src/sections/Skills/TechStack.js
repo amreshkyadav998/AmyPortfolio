@@ -10,6 +10,7 @@ import {
   DiPython,
   DiGit,
   DiCss3,
+  DiJava,
 } from "react-icons/di";
 import {
   SiNextdotjs,
@@ -23,34 +24,53 @@ import {
   SiMysql,
   SiC,
   SiRazorpay,
+  SiSass,
+  SiFastapi,
+  SiFlask,
+  SiMaterialui,
+  SiGraphql,
+  SiDocker,
+  SiPostgresql,
+  SiJupyter,
 } from "react-icons/si";
 import { GiGearHammer } from "react-icons/gi";
-import { FaCloud } from "react-icons/fa"; // Alternative for Cloudinary
+import { FaCloud, FaAws, FaGithub } from "react-icons/fa"; // FaCloud = Cloudinary
 
 function TechStack() {
   const techs = [
     { icon: <SiC />, name: "C" },
     { icon: <CgCPlusPlus />, name: "C++" },
+    { icon: <DiJava />, name: "Java" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
-    { icon: <DiNodejs />, name: "Node.js" },
+    { icon: <SiTypescript />, name: "Typescript" },
+    { icon: <DiPython />, name: "Python" },
     { icon: <DiReact />, name: "React.js" },
     { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <DiNodejs />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express.js" },
-    { icon: <SiTypescript />, name: "Typescript" },
-    { icon: <SiBootstrap />, name: "Bootstrap" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <DiCss3 />, name: "CSS3" },
+    { icon: <SiFlask />, name: "Flask" },
+    { icon: <SiFastapi />, name: "FastAPI" },
     { icon: <AiFillHtml5 />, name: "HTML5" },
+    { icon: <DiCss3 />, name: "CSS3" },
+    { icon: <SiSass />, name: "SCSS" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <SiBootstrap />, name: "Bootstrap" },
+    { icon: <SiMaterialui />, name: "Material UI" },
+    { icon: <SiGraphql />, name: "GraphQL" },
     { icon: <DiMongodb />, name: "MongoDB" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
     { icon: <SiMysql />, name: "MySQL" },
     { icon: <SiSupabase />, name: "Supabase" },
+    { icon: <FaAws />, name: "AWS" },
+    { icon: <SiDocker />, name: "Docker" },
     { icon: <DiGit />, name: "Git" },
+    { icon: <FaGithub />, name: "GitHub" },
     { icon: <SiPostman />, name: "Postman" },
+    { icon: <SiJupyter />, name: "Jupyter" },
     { icon: <FaCloud />, name: "Cloudinary" },
     { icon: <SiRazorpay />, name: "Razorpay" },
     { icon: <SiCanva />, name: "Canva" },
-    { icon: <DiPython />, name: "Python" },
-    { icon: <GiGearHammer />, name: "OOPs" }, 
+    { icon: <GiGearHammer />, name: "OOPs" },
   ];
 
   return (

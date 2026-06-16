@@ -19,9 +19,9 @@ const Header = () => {
       <div className="floating-elements">
         <div className="float-icon float-1">{'{ }'}</div>
         <div className="float-icon float-2">{'</>'}</div>
-        <div className="float-icon float-3">{'<>'}</div>
-        <div className="float-icon float-4">{'⚡'}</div>
-        <div className="float-icon float-5">{'🚀'}</div>
+        <div className="float-icon float-3">{'( )'}</div>
+        <div className="float-icon float-4">{'[ ]'}</div>
+        <div className="float-icon float-5">{';'}</div>
       </div>
 
       <div className="container header__container">
@@ -40,15 +40,17 @@ const Header = () => {
             <span className="badge-text">Available for opportunities</span>
           </div>
 
+          <p className="header__greeting">Hi, I'm Amresh Yadav</p>
+
           <h1 className="header__title">
             <TypeAnimation
               sequence={[
-                'Myself Amresh Yadav',
-                1000,
-                'I am MERN Stack Developer',
-                1000,
-                'I am Competitive Programmer',
-                1000,
+                'Full Stack Developer',
+                1500,
+                'MERN Stack Engineer',
+                1500,
+                'Competitive Programmer',
+                1500,
               ]}
               wrapper="span"
               speed={50}
@@ -58,7 +60,7 @@ const Header = () => {
           </h1>
 
           <p className="header__description">
-            Hello and welcome to my portfolio site! I'm Amresh Yadav, a dedicated MERN stack developer with a knack for crafting innovative web solutions. Dive into my projects to see how I've tackled various challenges and created impactful applications.
+            I'm a software engineer focused on building fast, accessible, and scalable web applications. I turn complex problems into clean, production-ready products — from polished interfaces to reliable backend systems.
           </p>
 
           <div className="header__cta">

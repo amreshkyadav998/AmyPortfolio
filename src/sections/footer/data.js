@@ -3,12 +3,11 @@ import {AiOutlineTwitter} from 'react-icons/ai'
 import {AiOutlineLinkedin} from "react-icons/ai";
 import {AiFillGithub} from 'react-icons/ai'
 import {SiLeetcode,SiCodeforces,SiCodechef} from 'react-icons/si';
-import {FaWhatsapp} from 'react-icons/fa'
 
 export const links = [
-    {id: 1, link: '#', title: 'Home'},
+    {id: 1, link: '#header', title: 'Home'},
     {id: 2, link: '#about', title: 'About'},
-    {id: 3, link: '#services', title: 'Services'},
+    {id: 3, link: '#experience', title: 'Work'},
     {id: 4, link: '#portfolio', title: 'Portfolio'},
     {id: 5, link: '#contact', title: 'Contact'}
 ]

@@ -1,15 +1,16 @@
 .card {
-    background: var(--color-white);
-    padding: 1.5rem;
-    border: 2px solid transparent;
-    border-radius: var(--border-radius-1);
+    background: var(--surface);
+    padding: 1.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--shadow-sm);
     transition: var(--transition);
 }
 
 .card:hover {
-    background: transparent;
-    border-color: var(--color-white);
-    transform: translateY(-0.5rem);
+    transform: translateY(-6px);
+    border-color: hsla(var(--primary-hue), var(--primary-sat), 55%, 0.4);
+    box-shadow: var(--shadow-md);
 }
 
 .card.light {
@@ -17,14 +18,12 @@
 }
 
 .card.light:hover {
-    background: transparent;
-    border-color: var(--color-light);
+    border-color: hsla(var(--primary-hue), var(--primary-sat), 55%, 0.4);
 }
-
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
     .card {
-        padding: 1.2rem;
+        padding: 1.3rem;
     }
 }

@@ -23,9 +23,9 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-      <h2>Recent Projects</h2>
+      <h2>Featured Projects</h2>
       <p>
-      Check out some of the projects I recently worked on for my clients. Use the buttons to toggle the different categories.
+      A selection of products and experiments I've built end to end. Filter by category to explore full-stack apps, frontends, and JavaScript projects.
       </p>
       <div className="container portfolio__container">
         <ProjectsCategories categories={uniqueCategories} onFilterProjects={filterProjectsHandler}/>

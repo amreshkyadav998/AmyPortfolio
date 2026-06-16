@@ -1,98 +1,109 @@
 .about__container {
     display: grid;
-    grid-template-columns: 35% 53%;
-    gap: 12%;
+    grid-template-columns: 38% 1fr;
+    gap: 6%;
+    align-items: center;
 }
 
 .about__portrait {
-    height: fit-content;
-    max-height: 40rem;
-    border: 0; /* Initially no border */
+    position: relative;
+    border-radius: var(--border-radius-1);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
     transition: var(--transition);
-    overflow: hidden; /* Ensure that any overflow is hidden */
+    aspect-ratio: 4 / 5;
+}
+
+.about__portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, transparent 55%, hsla(var(--primary-hue), var(--primary-sat), 40%, 0.30));
+    opacity: 0;
+    transition: var(--transition);
 }
 
 .about__portrait img {
-    display: block; /* Ensures that the image is treated as a block-level element */
-    width: 100%; /* Make sure the image covers the container */
-    height: auto; /* Maintain aspect ratio */
-    background: var(--color-primary);
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
 }
 
-.about__portrait:hover {
-    border: 0.6rem solid var(--color-primary); /* Example border on hover */
-    /* Add any other hover styles you want */
+.about__portrait:hover { transform: translateY(-6px); }
+.about__portrait:hover img { transform: scale(1.05); }
+.about__portrait:hover::after { opacity: 1; }
+
+.about__eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
 }
 
-
+.about__right h2 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
 
 .about__cards {
-    margin: 3rem 0 1.5rem;
+    margin: 2rem 0 1.8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .card.about__card {
     text-align: center;
+    padding: 1.4rem 1rem;
 }
 
 .about__card-icon {
-    font-size: 1.3rem;
-    color: var(--color-black);
-    border-radius: var(--border-radius-3);
-    width: fit-content;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    background: hsla(var(--primary-hue), var(--primary-sat), 55%, 0.10);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
     margin-inline: auto;
-    padding: 0.6rem;
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
     transition: var(--transition);
 }
 
 .card.about__card:hover .about__card-icon {
-    background: var(--color-primary);
-    color: var(--color-white);
+    background: var(--gradient-primary);
+    color: #fff;
+    transform: rotate(8deg);
 }
 
-.card.about__card h5 {
-    margin: 1rem 0;
-}
+.card.about__card h5 { margin: 0.9rem 0 0.2rem; color: var(--color-black); }
+.card.about__card small { color: var(--color-muted); }
 
 .about__right p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
 }
 
-.about__right .btn {
-    margin-top: 2.5rem;
-}
-
-
+.about__right .btn { margin-top: 1.8rem; }
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
-    .about__left {
-        display: none;
-    }
-
-    .about__container {
-        grid-template-columns: 1fr;
-    }
-
-    .about__right h2 {
-        text-align: center;
-    }
+    .about__left { display: none; }
+    .about__container { grid-template-columns: 1fr; }
+    .about__right { text-align: center; }
+    .about__right h2 { text-align: center; }
+    .about__eyebrow { text-align: center; }
+    .about__right .btn { margin-inline: auto; }
 }
-
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
-.about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.about__right .btn {
-    margin-top: 2rem;
-}
-
+    .about__cards { grid-template-columns: 1fr; gap: 1rem; }
+    .about__right .btn { margin-top: 1.5rem; }
 }

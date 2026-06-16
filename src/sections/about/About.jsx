@@ -11,10 +11,11 @@ const About = () => {
             <div className="container about__container">
                 <div className="about__left">
                     <div className="about__portrait">
-                        <img src="/amy.jpg" alt="About Image" />
+                        <img src="/amy.jpg" alt="Amresh Yadav" />
                     </div>
                 </div>
                 <div className="about__right">
+                    <span className="about__eyebrow">Get to know me</span>
                     <h2>About Me</h2>
                     <div className="about__cards">
                         {
@@ -28,12 +29,12 @@ const About = () => {
                         }
                     </div>
                     <p>
-                        On a web development odyssey for a year, perpetually growing wiser, and striving to surpass myself every day.
+                        I'm Amresh Yadav, a Full Stack / MERN developer who graduated from IIIT Ranchi with a B.Tech in Electronics &amp; Communication Engineering, finishing with a 9.59 CGPA. I'm currently a Software Engineer Intern at Ocrolus, where I build production-grade interfaces and microservice-backed internal tools.
                     </p>
                     <p>
-                        Hi, I'm Amresh Yadav, a dedicated MERN Stack web developer currently pursuing a B.Tech in Electronics and Communication Engineering. With a commitment to excellence and a patient approach, I've successfully completed a range of projects and gained valuable industry insights. I am eager to apply my skills and contribute to innovative projects. Feel free to review my resume and let's discuss how I can be an asset to your team!</p>
+                        I care about clean architecture, thoughtful UX, and shipping reliable software. Across internships and personal projects, I've worked end to end — from designing responsive React frontends to building performant APIs. Take a look at my resume and let's talk about how I can add value to your team.
+                    </p>
                     <a href="/Amresh_Updated_Resume_W_G_OG1.pdf" download className='btn primary'>Download Resume <HiDownload /></a>
-                    {/* <a  className='btn primary'>Download Resume <HiDownload /></a> */}
                 </div>
             </div>
         </section>

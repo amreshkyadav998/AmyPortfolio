@@ -9,109 +9,147 @@
 }
 
 :root {
-    --primary-hue: 270;
-    --black-lightness: 15%;
-    --dark-lightness: 44%;
-    --light-lightness: 94%;
-    --white-lightness: 100%;
-    --color-primary: hsl(var(--primary-hue), 89%, 41%);
-    --color-white: hsl(0, 5%, var(--white-lightness));
-    --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
-    --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
-    --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+    /* Accent (warm terracotta by default; theme switcher changes hue/sat) */
+    --primary-hue: 16;
+    --primary-sat: 46%;
+
+    /* ===== LIGHT PALETTE — warm cream + charcoal (defaults for overlays) ===== */
+    --color-primary: hsl(var(--primary-hue), var(--primary-sat), 48%);
+    --color-primary-dark: hsl(var(--primary-hue), var(--primary-sat), 40%);
+    --color-white: #f7f2e8;   /* page / primary background (cream) */
+    --color-light: #efe6d6;   /* alternating sections (soft beige) */
+    --color-black: #26221c;   /* headings (warm charcoal) */
+    --color-dark:  #5c554a;   /* body text (warm grey) */
+
+    /* Surfaces / borders / accents */
+    --surface:   #fdfaf3;     /* cards (lifted off-cream) */
+    --surface-2: #efe6d6;
+    --color-border: rgba(38, 34, 28, 0.10);
+    --color-muted:  #8d8676;
+
+    /* Brand gradient (accent-driven) */
+    --grad-1: hsl(var(--primary-hue), var(--primary-sat), 54%);
+    --grad-2: hsl(calc(var(--primary-hue) - 8), calc(var(--primary-sat) + 8%), 43%);
+    --gradient-primary: linear-gradient(135deg, var(--grad-1) 0%, var(--grad-2) 100%);
 
     /* GENERAL CONTAINER VARIABLES */
-    --container-width-lg: 76%;
+    --container-width-lg: 80%;
     --container-width-md: 90%;
+    --max-width: 1240px;
 
     /* BORDER RADIUS VARIABLES */
-    --border-radius-1: 1.2rem;
-    --border-radius-2: 0.8rem;
-    --border-radius-3: 0.5rem;
+    --border-radius-1: 1.5rem;
+    --border-radius-2: 1rem;
+    --border-radius-3: 0.65rem;
+
+    /* SHADOWS (warm, soft) */
+    --shadow-sm: 0 1px 2px rgba(60, 50, 38, 0.05), 0 2px 8px rgba(60, 50, 38, 0.06);
+    --shadow-md: 0 10px 30px rgba(55, 45, 33, 0.10);
+    --shadow-lg: 0 28px 64px rgba(45, 36, 26, 0.16);
+    --shadow-primary: 0 16px 40px hsla(var(--primary-hue), var(--primary-sat), 45%, 0.32);
 
     /* GENERAL TRANSITION VARIABLE */
-    --transition: all 500ms ease;
+    --transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    font-size: 0.9rem;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background: var(--color-white);
+    overflow-x: hidden;
 }
 
+/* THEME change — accent options (neutrals stay cream/charcoal) */
+main.color-1 { --primary-hue: 16;  --primary-sat: 46%; }  /* terracotta */
+main.color-2 { --primary-hue: 95;  --primary-sat: 26%; }  /* sage / olive */
+main.color-3 { --primary-hue: 188; --primary-sat: 40%; }  /* muted teal */
+main.color-4 { --primary-hue: 345; --primary-sat: 34%; }  /* dusty rose */
+main.color-5 { --primary-hue: 4;   --primary-sat: 52%; }  /* brick red */
+main.color-6 { --primary-hue: 36;  --primary-sat: 52%; }  /* ochre / gold */
 
-
-
-
-
-
-
-
-
-
-/* THEME change using react */
-main.color-1 {
-    --primary-hue: 270;
-}
-main.color-2 {
-    --primary-hue: 110;
-}
-main.color-3 {
-    --primary-hue: 240;
-}
-main.color-4 {
-    --primary-hue: 325;
-}
-main.color-5 {
-    --primary-hue: 0;
-}
-main.color-6 {
-    --primary-hue: 55;
-}
-
+/* ===== DARK PALETTE — warm charcoal / dark grey ===== */
 main.bg-2 {
-    --black-lightness: 96%;
-    --dark-lightness: 60%;
-    --light-lightness: 12%;
-    --white-lightness: 6%;
-    --color-white: hsl(0, 5%, var(--white-lightness));
-    --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
-    --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
-    --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+    --color-white: #1a1815;   /* page background (warm charcoal) */
+    --color-light: #211e1a;   /* alternating sections */
+    --color-black: #f3eee3;   /* headings (cream) */
+    --color-dark:  #bdb6a8;   /* body text */
+
+    --surface:   #24211c;     /* cards */
+    --surface-2: #1f1c18;
+    --color-border: rgba(243, 238, 227, 0.12);
+    --color-muted:  #948d7e;
+
+    /* Brighten accent slightly for dark background */
+    --color-primary: hsl(var(--primary-hue), calc(var(--primary-sat) + 6%), 60%);
+    --color-primary-dark: hsl(var(--primary-hue), var(--primary-sat), 50%);
+    --grad-1: hsl(var(--primary-hue), calc(var(--primary-sat) + 8%), 62%);
+    --grad-2: hsl(calc(var(--primary-hue) - 8), calc(var(--primary-sat) + 10%), 50%);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 28px 64px rgba(0, 0, 0, 0.62);
+    --shadow-primary: 0 16px 40px hsla(var(--primary-hue), var(--primary-sat), 45%, 0.45);
 }
 
+/*
+ * Re-declare every token that depends on --primary-hue or the theme
+ * background variables on `main` itself. Custom properties are substituted
+ * at their declaration scope, so declaring these on :root would freeze them
+ * to the light/default palette and break theme color + dark mode switching.
+ */
 main {
+    --color-primary: hsl(var(--primary-hue), var(--primary-sat), 48%);
+    --color-primary-dark: hsl(var(--primary-hue), var(--primary-sat), 40%);
+
+    --color-white: #f7f2e8;
+    --color-light: #efe6d6;
+    --color-black: #26221c;
+    --color-dark:  #5c554a;
+
+    --surface:   #fdfaf3;
+    --surface-2: #efe6d6;
+    --color-border: rgba(38, 34, 28, 0.10);
+    --color-muted:  #8d8676;
+
+    --grad-1: hsl(var(--primary-hue), var(--primary-sat), 54%);
+    --grad-2: hsl(calc(var(--primary-hue) - 8), calc(var(--primary-sat) + 8%), 43%);
+    --gradient-primary: linear-gradient(135deg, var(--grad-1) 0%, var(--grad-2) 100%);
+
+    --shadow-sm: 0 1px 2px rgba(60, 50, 38, 0.05), 0 2px 8px rgba(60, 50, 38, 0.06);
+    --shadow-md: 0 10px 30px rgba(55, 45, 33, 0.10);
+    --shadow-lg: 0 28px 64px rgba(45, 36, 26, 0.16);
+    --shadow-primary: 0 16px 40px hsla(var(--primary-hue), var(--primary-sat), 45%, 0.32);
+
     color: var(--color-dark);
-    --color-primary: hsl(var(--primary-hue), 89%, 41%);
+    background: var(--color-white);
+    transition: var(--transition);
 }
-
-
-
-
-
-
-
 
 /* GENERAL CONTAINER CLASS */
 .container {
     width: var(--container-width-lg);
     margin-inline: auto;
-    max-width: 1920px;
+    max-width: var(--max-width);
 }
 
 /* GENERAL SECTION STYLES */
 section {
-    padding: 10rem 0;
-    background: var(--color-light);
+    padding: 7rem 0;
+    background: var(--color-white);
     transition: var(--transition);
+    position: relative;
 }
 
 section:nth-child(even) {
-    background: var(--color-white);
+    background: var(--color-light);
 }
 
 section > h2 {
@@ -120,46 +158,39 @@ section > h2 {
 
 section > p {
     text-align: center;
-    margin: 0.5rem auto 4rem;
-    width: 40%;
+    margin: 1rem auto 3.5rem;
+    max-width: 38rem;
+    width: 90%;
+    color: var(--color-muted);
+    font-size: 1.02rem;
 }
 
+/* Section eyebrow + heading helpers */
+.section__title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
 
-/* GENERAL SECTION STYLES */
 a {
-    /* color: var(--color-white); */
     transition: var(--transition);
+    color: inherit;
 }
 
 /* GENERAL HEADING STYLES */
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.1;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    line-height: 1.15;
     color: var(--color-black);
+    letter-spacing: -0.01em;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.6rem;
-}
-
-h4 {
-    font-size: 1.1rem;
-}
-
-h5 {
-    font-size: 0.95rem;
-}
-
-h6 {
-    font-size: 0.8rem;
-}
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; }
+h3 { font-size: 1.5rem; font-weight: 700; }
+h4 { font-size: 1.15rem; font-weight: 700; }
+h5 { font-size: 0.95rem; font-weight: 600; }
+h6 { font-size: 0.8rem; font-weight: 600; }
 
 /* GENERAL IMAGES STYLES */
 img {
@@ -170,104 +201,76 @@ img {
 
 /* GENERAL BUTTON STYLES */
 .btn {
-    display: inline-block;
-    width: fit-content;
-    display: flex;
+    --btn-bg: var(--color-light);
+    --btn-color: var(--color-black);
+    display: inline-flex;
     align-items: center;
-    gap: 1rem;
-    background: var(--color-light);
-    color: var(--color-black);
-    padding: 0.6rem 2.5rem;
-    border: 2px solid transparent;
-    border-radius: var(--border-radius-2);
+    justify-content: center;
+    gap: 0.6rem;
+    width: fit-content;
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 0.8rem 1.8rem;
+    border: 1.5px solid var(--color-border);
+    border-radius: 50px;
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    line-height: 1;
+    transition: var(--transition);
 }
 
 .btn:hover {
-    background-color: transparent;
-    border-color: var(--color-light);
-    transform: translateY(-0.5rem);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
 }
 
 .btn.white {
     background: var(--color-white);
-}
-
-.btn.white:hover {
-    background: transparent;
-    border-color: var(--color-white);
+    border-color: var(--color-border);
 }
 
 .btn.primary {
-    background: var(--color-primary);
-    /* text color always white that's why i didn't use a variable color */
-    color: white;
+    background: var(--gradient-primary);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: var(--shadow-primary);
 }
 
 .btn.primary:hover {
-    background: transparent;
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    box-shadow: 0 20px 48px hsla(var(--primary-hue), var(--primary-sat), 55%, 0.42);
 }
 
 .btn.sm {
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.3rem;
+    font-size: 0.85rem;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--color-light); }
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid var(--color-light);
+}
 
-
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
-    body {
-        font-size: 1rem;
-    }
-    
-    .container {
-        width: var(--container-width-md);
-    }
-
-    section {
-        padding: 8rem 0;
-    }
-
-    section > p {
-        width: 72%;
-        margin-bottom: 3rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
+    body { font-size: 1rem; }
+    .container { width: var(--container-width-md); }
+    section { padding: 5.5rem 0; }
 }
-
-
-
-
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 2.4rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 0.6rem 1.5rem;
-    }
-
-    section > p {
-        width: var(--container-width-md);
-    }
+    section { padding: 4.5rem 0; }
+    .btn { padding: 0.75rem 1.5rem; }
+    section > p { width: var(--container-width-md); }
 }

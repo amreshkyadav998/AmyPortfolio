@@ -4,6 +4,23 @@ import './ExperienceSection.css';
 const Experience = () => {
   const experiences = [
     {
+      id: 0,
+      company: "Ocrolus",
+      role: "Software Engineer Intern",
+      type: "Intern",
+      location: "Gurugram, Haryana",
+      duration: "Nov 2025 - Present",
+      technologies: ["React.js", "TypeScript", "Material UI", "Python", "Flask", "FastAPI", "PostgreSQL", "Kafka", "Redis", "gRPC", "Microservices"],
+      achievements: [
+        "Developed and maintained Client UI, translating Figma designs into production-ready React.js + TypeScript applications while building reusable, responsive, and scalable UI components used across multiple internal workflows",
+        "Led the migration of internal tools from Retool to a custom React.js + TypeScript architecture, improving maintainability, flexibility, and long-term scalability while enhancing the overall user experience",
+        "Saved over $100,000 in operational and licensing costs by replacing third-party platform infrastructure with high-performance custom-built internal applications tailored to business requirements",
+        "Eliminated direct SQL query dependencies from internal tools by integrating secure microservice-based APIs, significantly improving security, service isolation, and system maintainability",
+        "Integrated Apache Kafka for event-driven communication and asynchronous messaging across distributed microservices, enabling reliable workflow orchestration and seamless frontend-backend data synchronization",
+        "Improved application performance by approximately 25% through Redis caching, PostgreSQL query optimization, and efficient gRPC-based service communication, reducing latency and enhancing system responsiveness"
+      ]
+    },
+    {
       id: 1,
       company: "Saarthee",
       role: "Full Stack Developer",

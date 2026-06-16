@@ -1,36 +1,95 @@
 footer {
-    background: var(--color-primary);
-    padding-top: 8rem;
-    box-shadow: 0 -1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+    background: var(--color-light);
+    border-top: 1px solid var(--color-border);
+    padding-top: 4rem;
     transition: var(--transition);
 }
 
-footer .nav__menu {
-    justify-content: center;
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    padding-bottom: 2.5rem;
 }
 
-.footer__socials {
-    width: fit-content;
+.footer__logo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-black);
+    letter-spacing: -0.02em;
+}
+
+.footer__logo span { color: var(--color-primary); }
+
+.footer__menu {
     display: flex;
-    gap: 1.5rem;
-    margin: 3rem auto 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__menu a {
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.footer__menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease;
+}
+
+.footer__menu a:hover { color: var(--color-primary); }
+.footer__menu a:hover::after { width: 100%; }
+
+.footer__socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
 }
 
 .footer__socials a {
-    background: var(--color-black);
-    color: var(--color-white);
-    padding: 0.6rem;
-    border-radius: var(--border-radius-3);
+    width: 2.6rem;
+    height: 2.6rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    background: var(--surface);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    transition: var(--transition);
 }
 
 .footer__socials a:hover {
-    opacity: 0.7;
-    transform: translateY(-0.5rem);
+    background: var(--gradient-primary);
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-primary);
 }
 
 .footer__copyright {
-    color: white;
+    color: var(--color-muted);
     text-align: center;
-    border-top: 2px solid rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
+    padding: 1.4rem 0;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footer__menu { gap: 1.2rem; }
 }
