@@ -1,6 +1,16 @@
 const data = [
 
     {
+        id : 103,
+        category : 'FullStack',
+        image:"/assets/wanderluxe.png",
+        title:"Wanderluxe",
+        desc : "Wanderluxe is a production-style microservices hotel booking system built to practice real backend engineering. It uses a Next.js frontend, an Express API gateway, and four Node.js services communicating over gRPC, with PostgreSQL, Redis, and a Kafka-driven saga handling distributed transactions, concurrency control, and inventory management.",
+        demo:"https://github.com/amreshkyadav998/Wanderluxe",
+        github:"https://github.com/amreshkyadav998/Wanderluxe"
+    },
+
+    {
         id : 100,
         category : 'FullStack',
         image:"/assets/nomichi.png",
