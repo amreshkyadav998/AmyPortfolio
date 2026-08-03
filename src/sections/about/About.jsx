@@ -34,7 +34,7 @@ const About = () => {
                     <p>
                         I care about clean architecture, thoughtful UX, and shipping reliable software. Across internships and personal projects, I've worked end to end — from designing responsive React frontends to building performant APIs. Take a look at my resume and let's talk about how I can add value to your team.
                     </p>
-                    <a href="/Amresh_Updated_Resume_W_G_OG1.pdf" download className='btn primary'>Download Resume <HiDownload /></a>
+                    <a href="/Amresh_Resume_LOCSR.pdf" download="Amresh_Yadav_Resume.pdf" className='btn primary'>Download Resume <HiDownload /></a>
                 </div>
             </div>
         </section>

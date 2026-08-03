@@ -1,5 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { HiDownload } from 'react-icons/hi';
 import data from './data';
 import './header.css';
 
@@ -73,6 +74,10 @@ const Header = () => {
               <svg className="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
+            </a>
+            <a href="/Amresh_Resume_LOCSR.pdf" download="Amresh_Yadav_Resume.pdf" className="btn btn-secondary">
+              <span>Resume</span>
+              <HiDownload className="btn-arrow" />
             </a>
           </div>
 
